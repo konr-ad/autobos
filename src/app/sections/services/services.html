@@ -1,0 +1,58 @@
+<section id="services" class="py-20 border-t border-zinc-800">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="grid gap-10 lg:grid-cols-2 items-start">
+      <div>
+        <h2 class="text-3xl font-semibold">Usługi</h2>
+
+        <p class="mt-3 text-zinc-300 max-w-xl">
+          Diagnostyka, elektryka samochodowa, kodowanie i serwis mechaniczny.
+          Specjalizacja w autach klasy premium, ze szczególnym naciskiem na Mercedes-Benz.
+        </p>
+
+        <div class="mt-6 grid gap-3 sm:grid-cols-2 max-w-xl text-sm text-zinc-300">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-2 w-2 rounded-full bg-white"></span>
+            <span>Rzetelna diagnoza przed naprawą</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-2 w-2 rounded-full bg-white"></span>
+            <span>Transparentna wycena i kontakt</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-2 w-2 rounded-full bg-white"></span>
+            <span>Krótkie materiały wideo z napraw</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-2 w-2 rounded-full bg-white"></span>
+            <span>Doświadczenie w autach premium</span>
+          </div>
+        </div>
+
+        <div class="mt-8 flex flex-col sm:flex-row gap-3">
+          <a
+            class="inline-flex items-center justify-center rounded-xl bg-white text-zinc-950 px-6 py-3 font-medium hover:opacity-90"
+            href="tel:+48123123123"
+          >
+            Zadzwoń
+          </a>
+          <a
+            class="inline-flex items-center justify-center rounded-xl border border-zinc-700 px-6 py-3 font-medium hover:bg-zinc-900"
+            href="#contact"
+          >
+            Kontakt
+          </a>
+        </div>
+      </div>
+
+      <div class="grid gap-4 sm:grid-cols-2">
+        <div
+          *ngFor="let s of services"
+          class="rounded-2xl border border-zinc-800 bg-zinc-900/30 p-5 hover:bg-zinc-900/45 transition"
+        >
+          <div class="text-lg font-semibold">{{ s.title }}</div>
+          <p class="mt-2 text-sm text-zinc-300">{{ s.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
