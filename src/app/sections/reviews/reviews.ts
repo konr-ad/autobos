@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgFor } from '@angular/common';
+import {RevealOnScroll} from '../../shared/directives/reveal-on-scroll';
 
 type Review = {
   author: string;
@@ -10,7 +11,7 @@ type Review = {
 @Component({
   selector: 'app-reviews',
   standalone: true,
-  imports: [NgFor],
+  imports: [NgFor, RevealOnScroll],
   templateUrl: './reviews.html',
   styleUrl: './reviews.css',
 })

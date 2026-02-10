@@ -17,3 +17,13 @@ section[id] {
     padding-bottom: 88px;
   }
 }
+
+@layer components {
+  .reveal-section {
+    @apply opacity-0 translate-y-6 transition-all duration-1000 ease-in-out;
+  }
+
+  .reveal-section.is-revealed {
+    @apply opacity-100 translate-y-0;
+  }
+}

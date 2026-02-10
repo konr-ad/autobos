@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {NgForOf} from '@angular/common';
+import {RevealOnScroll} from '../../shared/directives/reveal-on-scroll';
 
 type ServiceItem = {
   title: string;
@@ -12,7 +13,8 @@ type ServiceItem = {
   templateUrl: './services.html',
   styleUrl: './services.css',
   imports: [
-    NgForOf
+    NgForOf,
+    RevealOnScroll
   ]
 })
 export class Services {
